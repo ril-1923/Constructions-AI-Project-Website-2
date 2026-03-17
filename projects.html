@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - BuildCorp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navy fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fas fa-hard-hat me-2"></i>BuildCorp
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary btn-sm ms-2" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="py-3 bg-light mt-5">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Projects</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="py-5 bg-navy text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">Our Projects</h1>
+                    <p class="lead">Explore our portfolio of successful construction projects across residential, commercial, and infrastructure sectors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Filters -->
+    <section class="py-4 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <div class="btn-group" role="group" aria-label="Project filters">
+                    <button type="button" class="btn btn-outline-primary active" data-filter="all">All Projects</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="residential">Residential</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="commercial">Commercial</button>
+                    <button type="button" class="btn btn-outline-primary" data-filter="infrastructure">Infrastructure</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="projectsGrid">
+                <!-- Residential Projects -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="residential">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=500" class="card-img-top" alt="Green Valley Homes">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Green Valley Homes</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i>Suburban Area</p>
+                            <p class="text-muted mb-2"><i class="fas fa-tag me-1"></i>Residential</p>
+                            <p class="card-text">Sustainable residential community with 200 eco-friendly homes featuring modern amenities and green spaces.</p>
+                            <div class="project-details mb-3">
+                                <small class="text-muted">Timeline: 18 months</small><br>
+                                <span class="badge bg-success">Completed Q3 2023</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal" 
+                                data-title="Green Valley Homes" 
+                                data-image="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                data-description="A comprehensive residential development featuring 200 sustainable homes with integrated smart home technology, community centers, and extensive green spaces. This project showcases our commitment to environmental responsibility and modern living standards.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 project-item" data-category="residential">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=500" class="card-img-top" alt="Lakeside Villas">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Lakeside Villas</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i>Waterfront District</p>
+                            <p class="text-muted mb-2"><i class="fas fa-tag me-1"></i>Residential</p>
+                            <p class="card-text">Luxury waterfront residential complex with premium finishes and panoramic lake views.</p>
+                            <div class="project-details mb-3">
+                                <small class="text-muted">Timeline: 24 months</small><br>
+                                <span class="badge bg-success">Completed Q1 2024</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-title="Lakeside Villas"
+                                data-image="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                data-description="Premium waterfront development featuring 50 luxury villas with direct lake access, private docks, and resort-style amenities. Each villa incorporates high-end materials and cutting-edge construction techniques.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Projects -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="commercial">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=500" class="card-img-top" alt="Skyline Tower">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Skyline Tower</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i>Downtown District</p>
+                            <p class="text-muted mb-2"><i class="fas fa-tag me-1"></i>Commercial</p>
+                            <p class="card-text">40-story mixed-use development featuring retail, office, and residential spaces with modern architectural design.</p>
+                            <div class="project-details mb-3">
+                                <small class="text-muted">Timeline: 36 months</small><br>
+                                <span class="badge bg-success">Completed Q2 2024</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-title="Skyline Tower"
+                                data-image="https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                data-description="Iconic 40-story mixed-use tower in the heart of downtown, featuring Class A office space, luxury retail, and premium residential units. This LEED-certified building incorporates the latest in sustainable building technology.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 project-item" data-category="commercial">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=500" class="card-img-top" alt="Tech Campus">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Innovation Tech Campus</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i>Business Park</p>
+                            <p class="text-muted mb-2"><i class="fas fa-tag me-1"></i>Commercial</p>
+                            <p class="card-text">State-of-the-art technology campus with flexible workspace solutions and collaborative environments.</p>
+                            <div class="project-details mb-3">
+                                <small class="text-muted">Timeline: 28 months</small><br>
+                                <span class="badge bg-primary">In Progress</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-title="Innovation Tech Campus"
+                                data-image="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                data-description="Modern technology campus designed for innovation and collaboration, featuring flexible workspaces, research facilities, and cutting-edge infrastructure to support the future of work.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure Projects -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="infrastructure">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=500" class="card-img-top" alt="Heritage Bridge">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Heritage Bridge</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i>River District</p>
+                            <p class="text-muted mb-2"><i class="fas fa-tag me-1"></i>Infrastructure</p>
+                            <p class="card-text">Modern cable-stayed bridge connecting two major city districts with pedestrian and cycling paths.</p>
+                            <div class="project-details mb-3">
+                                <small class="text-muted">Timeline: 42 months</small><br>
+                                <span class="badge bg-primary">In Progress</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-title="Heritage Bridge"
+                                data-image="https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                data-description="Landmark cable-stayed bridge featuring innovative engineering solutions, dedicated pedestrian walkways, and integrated LED lighting systems. This project will serve as a vital transportation link and architectural landmark.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 project-item" data-category="infrastructure">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/161154/road-highway-asphalt-sky-161154.jpeg?auto=compress&cs=tinysrgb&w=500" class="card-img-top" alt="Metro Highway">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Metro Highway Extension</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i>Metropolitan Area</p>
+                            <p class="text-muted mb-2"><i class="fas fa-tag me-1"></i>Infrastructure</p>
+                            <p class="card-text">15-mile highway extension with smart traffic management systems and sustainable materials.</p>
+                            <div class="project-details mb-3">
+                                <small class="text-muted">Timeline: 30 months</small><br>
+                                <span class="badge bg-success">Completed Q4 2023</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-title="Metro Highway Extension"
+                                data-image="https://images.pexels.com/photos/161154/road-highway-asphalt-sky-161154.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                data-description="Major highway infrastructure project featuring intelligent transportation systems, noise barriers, and environmentally sustainable construction practices. The project improves regional connectivity and traffic flow.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 project-item" data-category="commercial">
+                    <div class="project-card">
+                        <img src="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg?auto=compress&cs=tinysrgb&w=500" class="card-img-top" alt="Shopping Complex">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Central Shopping Complex</h5>
+                            <p class="text-muted mb-2"><i class="fas fa-map-marker-alt me-1"></i>City Center</p>
+                            <p class="text-muted mb-2"><i class="fas fa-tag me-1"></i>Commercial</p>
+                            <p class="card-text">Multi-level retail and entertainment complex with modern amenities and sustainable design features.</p>
+                            <div class="project-details mb-3">
+                                <small class="text-muted">Timeline: 22 months</small><br>
+                                <span class="badge bg-success">Completed Q1 2023</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModal"
+                                data-title="Central Shopping Complex" 
+                                data-image="https://images.pexels.com/photos/3862634/pexels-photo-3862634.jpeg?auto=compress&cs=tinysrgb&w=800"
+                                data-description="Premier retail destination featuring over 200 stores, dining venues, entertainment facilities, and a state-of-the-art cinema complex. The design incorporates natural lighting and energy-efficient systems.">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Client Testimonials</h2>
+                <p class="lead text-muted">What our clients say about working with us</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"BuildCorp exceeded our expectations in every aspect. Their attention to detail and commitment to quality is unmatched. The Skyline Tower project was completed on time and within budget."</p>
+                        <div class="client-info d-flex align-items-center">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100" class="rounded-circle me-3" width="50" height="50" alt="Sarah Johnson">
+                            <div>
+                                <h6 class="mb-0">Sarah Johnson</h6>
+                                <small class="text-muted">CEO, Johnson Development</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"The team's professionalism and expertise made our residential project a huge success. The Green Valley Homes community is exactly what we envisioned and more."</p>
+                        <div class="client-info d-flex align-items-center">
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=100" class="rounded-circle me-3" width="50" height="50" alt="Michael Chen">
+                            <div>
+                                <h6 class="mb-0">Michael Chen</h6>
+                                <small class="text-muted">Director, Valley Properties</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Outstanding work on our infrastructure project. BuildCorp's innovative approach and technical expertise delivered results that will benefit our community for decades."</p>
+                        <div class="client-info d-flex align-items-center">
+                            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" class="rounded-circle me-3" width="50" height="50" alt="Emily Rodriguez">
+                            <div>
+                                <h6 class="mb-0">Emily Rodriguez</h6>
+                                <small class="text-muted">City Planning Commissioner</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" class="img-fluid mb-3" alt="Project Image">
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-hard-hat me-2"></i>BuildCorp
+                    </h5>
+                    <p class="text-muted">Building the future with integrity, innovation, and excellence in every project we undertake.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-secondary text-decoration-none">Home</a></li>
+                        <li><a href="projects.html" class="text-secondary text-decoration-none">Projects</a></li>
+                        <li><a href="contact.html" class="text-secondary text-decoration-none">Contact</a></li>
+                        <li><a href="login.html" class="text-secondary text-decoration-none">Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-secondary text-decoration-none">Residential Construction</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Commercial Projects</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Infrastructure</a></li>
+                        <li><a href="#" class="text-secondary text-decoration-none">Renovation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <ul class="list-unstyled text-secondary">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Construction Ave, City, State 12345</li>
+                        <li><i class="fas fa-phone me-2"></i>(555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@buildcorp.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0 text-muted">&copy; 2024 BuildCorp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
